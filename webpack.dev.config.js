@@ -7,6 +7,7 @@ module.exports = {
   entry: './index.js',
   output: {
     filename: './bundle.js',
+    publicPath: '/'
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -72,6 +73,7 @@ module.exports = {
   devServer: {
     inline: true,
     hot: true,
-    port: 9000
+    port: 9000,
+    historyApiFallback: true
   }
 };
